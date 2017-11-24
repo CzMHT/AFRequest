@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77FDE3605D1EDCDBF025A5D5 /* libPods-AFRequest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A828FF94E564764FD2E40777 /* libPods-AFRequest.a */; };
 		9EC68F1F1FC7F16200F07380 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC68F1E1FC7F16200F07380 /* AppDelegate.m */; };
 		9EC68F221FC7F16200F07380 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC68F211FC7F16200F07380 /* ViewController.m */; };
 		9EC68F251FC7F16200F07380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC68F231FC7F16200F07380 /* Main.storyboard */; };
@@ -14,9 +15,13 @@
 		9EC68F2A1FC7F16200F07380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC68F291FC7F16200F07380 /* Assets.xcassets */; };
 		9EC68F2D1FC7F16200F07380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC68F2B1FC7F16200F07380 /* LaunchScreen.storyboard */; };
 		9EC68F301FC7F16200F07380 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC68F2F1FC7F16200F07380 /* main.m */; };
+		9EC68F3B1FC7F49300F07380 /* AFRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC68F371FC7F49300F07380 /* AFRequest.m */; };
+		9EC68F3C1FC7F49300F07380 /* HUDHttps.cer in Resources */ = {isa = PBXBuildFile; fileRef = 9EC68F3A1FC7F49300F07380 /* HUDHttps.cer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2375E32C9389E9106672FC94 /* Pods-AFRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFRequest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFRequest/Pods-AFRequest.release.xcconfig"; sourceTree = "<group>"; };
+		2B56F496B4A876100B9C0D5A /* Pods-AFRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFRequest/Pods-AFRequest.debug.xcconfig"; sourceTree = "<group>"; };
 		9EC68F1A1FC7F16200F07380 /* AFRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC68F1D1FC7F16200F07380 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9EC68F1E1FC7F16200F07380 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +33,10 @@
 		9EC68F2C1FC7F16200F07380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EC68F2E1FC7F16200F07380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EC68F2F1FC7F16200F07380 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EC68F371FC7F49300F07380 /* AFRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFRequest.m; sourceTree = "<group>"; };
+		9EC68F381FC7F49300F07380 /* AFRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFRequest.h; sourceTree = "<group>"; };
+		9EC68F3A1FC7F49300F07380 /* HUDHttps.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = HUDHttps.cer; sourceTree = "<group>"; };
+		A828FF94E564764FD2E40777 /* libPods-AFRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFRequest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +44,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77FDE3605D1EDCDBF025A5D5 /* libPods-AFRequest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62A2E09D8A7691C106AA1827 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B56F496B4A876100B9C0D5A /* Pods-AFRequest.debug.xcconfig */,
+				2375E32C9389E9106672FC94 /* Pods-AFRequest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9EC68F111FC7F16200F07380 = {
 			isa = PBXGroup;
 			children = (
+				9EC68F361FC7F49300F07380 /* Request */,
+				9EC68F391FC7F49300F07380 /* Resource */,
 				9EC68F1C1FC7F16200F07380 /* AFRequest */,
 				9EC68F1B1FC7F16200F07380 /* Products */,
+				62A2E09D8A7691C106AA1827 /* Pods */,
+				A50256E33C1FF076D0F8B4DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +97,31 @@
 			path = AFRequest;
 			sourceTree = "<group>";
 		};
+		9EC68F361FC7F49300F07380 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9EC68F371FC7F49300F07380 /* AFRequest.m */,
+				9EC68F381FC7F49300F07380 /* AFRequest.h */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		9EC68F391FC7F49300F07380 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9EC68F3A1FC7F49300F07380 /* HUDHttps.cer */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A50256E33C1FF076D0F8B4DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A828FF94E564764FD2E40777 /* libPods-AFRequest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC68F331FC7F16200F07380 /* Build configuration list for PBXNativeTarget "AFRequest" */;
 			buildPhases = (
+				485733867C833BD486172420 /* [CP] Check Pods Manifest.lock */,
 				9EC68F161FC7F16200F07380 /* Sources */,
 				9EC68F171FC7F16200F07380 /* Frameworks */,
 				9EC68F181FC7F16200F07380 /* Resources */,
+				5B0035FD9D93D97B2A4AE87E /* [CP] Embed Pods Frameworks */,
+				59806090C5510248C579EB1B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC68F3C1FC7F49300F07380 /* HUDHttps.cer in Resources */,
 				9EC68F2D1FC7F16200F07380 /* LaunchScreen.storyboard in Resources */,
 				9EC68F2A1FC7F16200F07380 /* Assets.xcassets in Resources */,
 				9EC68F251FC7F16200F07380 /* Main.storyboard in Resources */,
@@ -140,6 +192,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		485733867C833BD486172420 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AFRequest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59806090C5510248C579EB1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AFRequest/Pods-AFRequest-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFRequest/Pods-AFRequest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B0035FD9D93D97B2A4AE87E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AFRequest/Pods-AFRequest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9EC68F161FC7F16200F07380 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -147,6 +253,7 @@
 			files = (
 				9EC68F281FC7F16200F07380 /* AFRequest.xcdatamodeld in Sources */,
 				9EC68F221FC7F16200F07380 /* ViewController.m in Sources */,
+				9EC68F3B1FC7F49300F07380 /* AFRequest.m in Sources */,
 				9EC68F301FC7F16200F07380 /* main.m in Sources */,
 				9EC68F1F1FC7F16200F07380 /* AppDelegate.m in Sources */,
 			);
@@ -280,10 +387,12 @@
 		};
 		9EC68F341FC7F16200F07380 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B56F496B4A876100B9C0D5A /* Pods-AFRequest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AFRequest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.AFRequest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,10 +402,12 @@
 		};
 		9EC68F351FC7F16200F07380 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2375E32C9389E9106672FC94 /* Pods-AFRequest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AFRequest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.AFRequest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
