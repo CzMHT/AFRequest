@@ -1,0 +1,6 @@
+framework module Pods_CommonPods_SwiftAFRequest {
+  umbrella header "Pods-CommonPods-SwiftAFRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

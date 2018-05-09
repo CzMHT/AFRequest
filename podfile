@@ -1,9 +1,54 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, ‘9.0’
 
-target ‘AFRequest’ do
-    pod 'AFNetworking', '~> 3.0'
+
+#workspace 'AFRequest' #工程名字
+#project '../AFRequest/AFRequest.xcodeproj'
+#
+#target 'AFRequest' do
+#
+#    project '../AFRequest/AFRequest.xcodeproj'
+#
+#    platform :ios, '9.0'
+#
+#    pod 'AFNetworking', '~> 3.0'
+#    pod 'Masonry'
+#    pod 'MJRefresh'
+#end
+#
+#
+#target 'SwiftAFRequest' do
+#
+#    project '../SwiftAFRequest/SwiftAFRequest.xcodeproj'
+#    platform :ios, '10.0'
+#
+#    pod 'AFNetworking', '~> 3.0'
+#    pod 'SwiftyJSON' #JSON 解析
+#end
+
+platform :ios, '10.0'
+inhibit_all_warnings!
+
+# 多个target共用一套pod的写法，项目中不能有名字为CommonPods，防止冲突；
+abstract_target 'CommonPods' do
+    
+    # 共用的pod第三方
+    pod 'AFNetworking'
     pod 'Masonry'
-    pod ‘MJRefresh’
-end
+    
+    # 项目中的target各自的设置
+    target 'AFRequest' do
 
+        pod 'MJRefresh'
+    end
+    target 'SwiftAFRequest’ do
+        use_frameworks!
+
+        pod 'SwiftyJSON'
+        pod 'SnapKit'
+    end
+    target 'AlamofireRequest' do
+        pod 'Alamofire'
+        pod 'SwiftyJSON'
+        pod 'SnapKit'
+    end
+end

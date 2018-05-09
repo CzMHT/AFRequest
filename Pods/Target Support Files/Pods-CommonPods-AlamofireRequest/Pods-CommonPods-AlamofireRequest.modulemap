@@ -1,0 +1,6 @@
+module Pods_CommonPods_AlamofireRequest [system] {
+  umbrella header "Pods-CommonPods-AlamofireRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}
